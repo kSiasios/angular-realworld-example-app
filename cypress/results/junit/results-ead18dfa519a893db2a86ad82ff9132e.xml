@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="35.7470" tests="5" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-29T11:59:37" tests="0" file="cypress/integration/firstTest.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test with backend" timestamp="2022-04-29T11:59:37" tests="5" time="35.7120" failures="1">
+    <testcase name="Test with backend Verify correct request and response" time="9.7550" classname="Verify correct request and response">
+    </testcase>
+    <testcase name="Test with backend Intercept and modify request and response" time="8.6890" classname="Intercept and modify request and response">
+    </testcase>
+    <testcase name="Test with backend Intercept get request with custom response" time="2.1400" classname="Intercept get request with custom response">
+    </testcase>
+    <testcase name="Test with backend Verify global feed likes count" time="6.9490" classname="Verify global feed likes count">
+    </testcase>
+    <testcase name="Test with backend Test article deletion" time="2.4750" classname="Test article deletion">
+      <failure message="`cy.request()` failed on:
+
+https://conduit.productionready.io/api/articles/
+
+The response we received from your web server was:
+
+  &gt; 422: Unprocessable Entity
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://conduit.productionready.io/api/articles/
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;Authorization&quot;: &quot;Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imtvc3Rhc3NpYXNpb3MxOTk5QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoia1NpYXNpb3MiLCJpYXQiOjE2NTEyMzM2MTAsImV4cCI6MTY1NjQxNzYxMH0.WMJxRuRcXmMBo5iqVr087EXWLME2el2EGTj-olrj9tc&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/101.0.4951.41 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;,
+  &quot;content-type&quot;: &quot;application/json&quot;,
+  &quot;content-length&quot;: 164,
+  &quot;referer&quot;: &quot;https://conduit.productionready.io/api/articles/&quot;
+}
+Body: {&quot;article&quot;:{&quot;tagList&quot;:[],&quot;title&quot;:&quot;Request from API&quot;,&quot;description&quot;:&quot;This article is about requests from api.&quot;,&quot;body&quot;:&quot;Requests from api are invisible to the user.&quot;}}
+Redirects: [
+  &quot;307: https://api.realworld.io/api/articles/&quot;
+]
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 422 - Unprocessable Entity
+Headers: {
+  &quot;date&quot;: &quot;Fri, 29 Apr 2022 12:00:11 GMT&quot;,
+  &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+  &quot;content-length&quot;: &quot;39&quot;,
+  &quot;connection&quot;: &quot;keep-alive&quot;,
+  &quot;x-powered-by&quot;: &quot;Express&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;*&quot;,
+  &quot;etag&quot;: &quot;W/\&quot;27-BNeuaWQ7DHvW/r+pl+qdJiF06Is\&quot;&quot;,
+  &quot;via&quot;: &quot;1.1 vegur&quot;,
+  &quot;cf-cache-status&quot;: &quot;DYNAMIC&quot;,
+  &quot;expect-ct&quot;: &quot;max-age=604800, report-uri=\&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\&quot;&quot;,
+  &quot;report-to&quot;: &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=WgN4uuE025JGvlNWD%2FljnlO17eBXa5wJr9VTCHposgi6H%2FWMiJOP7KA5UvaONgSviwUwEx6KIFCl8VzAx36esLt5ETX6QOgrVrdrMxNjpFx3fkVf5hd4hR%2BW%2BuCpMgX1aVvEwROPvQtXjB%2B2smug\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;,
+  &quot;nel&quot;: &quot;{\&quot;success_fraction\&quot;:0,\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;,
+  &quot;server&quot;: &quot;cloudflare&quot;,
+  &quot;cf-ray&quot;: &quot;7037e0390b3c91db-FRA&quot;,
+  &quot;alt-svc&quot;: &quot;h3=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400&quot;
+}
+Body: {
+  &quot;errors&quot;: {
+    &quot;title&quot;: [
+      &quot;must be unique&quot;
+    ]
+  }
+}
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://conduit.productionready.io/api/articles/
+
+The response we received from your web server was:
+
+  > 422: Unprocessable Entity
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://conduit.productionready.io/api/articles/
+Headers: {
+  "Connection": "keep-alive",
+  "Authorization": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imtvc3Rhc3NpYXNpb3MxOTk5QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoia1NpYXNpb3MiLCJpYXQiOjE2NTEyMzM2MTAsImV4cCI6MTY1NjQxNzYxMH0.WMJxRuRcXmMBo5iqVr087EXWLME2el2EGTj-olrj9tc",
+  "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/101.0.4951.41 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate",
+  "content-type": "application/json",
+  "content-length": 164,
+  "referer": "https://conduit.productionready.io/api/articles/"
+}
+Body: {"article":{"tagList":[],"title":"Request from API","description":"This article is about requests from api.","body":"Requests from api are invisible to the user."}}
+Redirects: [
+  "307: https://api.realworld.io/api/articles/"
+]
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 422 - Unprocessable Entity
+Headers: {
+  "date": "Fri, 29 Apr 2022 12:00:11 GMT",
+  "content-type": "application/json; charset=utf-8",
+  "content-length": "39",
+  "connection": "keep-alive",
+  "x-powered-by": "Express",
+  "access-control-allow-origin": "*",
+  "etag": "W/\"27-BNeuaWQ7DHvW/r+pl+qdJiF06Is\"",
+  "via": "1.1 vegur",
+  "cf-cache-status": "DYNAMIC",
+  "expect-ct": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\"",
+  "report-to": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=WgN4uuE025JGvlNWD%2FljnlO17eBXa5wJr9VTCHposgi6H%2FWMiJOP7KA5UvaONgSviwUwEx6KIFCl8VzAx36esLt5ETX6QOgrVrdrMxNjpFx3fkVf5hd4hR%2BW%2BuCpMgX1aVvEwROPvQtXjB%2B2smug\"}],\"group\":\"cf-nel\",\"max_age\":604800}",
+  "nel": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}",
+  "server": "cloudflare",
+  "cf-ray": "7037e0390b3c91db-FRA",
+  "alt-svc": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+}
+Body: {
+  "errors": {
+    "title": [
+      "must be unique"
+    ]
+  }
+}
+
+
+https://on.cypress.io/request
+    at http://localhost:4200/__cypress/runner/cypress_runner.js:164670:80
+    at tryCatcher (http://localhost:4200/__cypress/runner/cypress_runner.js:13022:23)
+    at Promise._settlePromiseFromHandler (http://localhost:4200/__cypress/runner/cypress_runner.js:10957:31)
+    at Promise._settlePromise (http://localhost:4200/__cypress/runner/cypress_runner.js:11014:18)
+    at Promise._settlePromise0 (http://localhost:4200/__cypress/runner/cypress_runner.js:11059:10)
+    at Promise._settlePromises (http://localhost:4200/__cypress/runner/cypress_runner.js:11139:18)
+    at _drainQueueStep (http://localhost:4200/__cypress/runner/cypress_runner.js:7729:12)
+    at _drainQueue (http://localhost:4200/__cypress/runner/cypress_runner.js:7722:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7738:5)
+    at Async.drainQueues (http://localhost:4200/__cypress/runner/cypress_runner.js:7608:14)
+From Your Spec Code:
+    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/firstTest.spec.js:232:12)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

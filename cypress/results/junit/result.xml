@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2022-04-28T09:15:41" tests="0" file="cypress/integration/firstTest.spec.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Test with backend" timestamp="2022-04-28T09:15:41" tests="5" time="39.9950" failures="1">
+  
+  <testcase name="Test with backend Verify correct request and response" time="7.0260" classname="Verify correct request and response"></testcase>
+  
+  <testcase name="Test with backend Intercept and modify request and response" time="5.8840" classname="Intercept and modify request and response"></testcase>
+  
+  <testcase name="Test with backend Intercept get request with custom response" time="1.5590" classname="Intercept get request with custom response"></testcase>
+  
+  <testcase name="Test with backend Verify global feed likes count" time="7.1300" classname="Verify global feed likes count">
+    
+    <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;Global Feedr&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Global Feedr' but never did.
+    at Context.eval (http://localhost:4200/__cypress/tests?p=cypress/integration/firstTest.spec.js:190:8)]]></failure>
+    
+  </testcase>
+  
+  <testcase name="Test with backend Test article deletion" time="4.0460" classname="Test article deletion"></testcase>
+  
+</testsuite>
+
+</testsuites>

@@ -1,0 +1,31 @@
+{
+  "baseUrl": "http://localhost:4200",
+  "ignoreTestFiles": [
+    "**/1-getting-started/*",
+    "**/2-advanced-examples/*",
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "video": true,
+  "retries": {
+    "runMode": 2,
+    "openMode": 1
+  },
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "env": {
+    "username": "kostassiasios1999@gmail.com",
+    "password": "PB9pdBsfaLLyKf9",
+    "apiURL": "https://conduit.productionready.io/",
+    "cypress-plugin-snapshots": {
+      "imageConfig": {
+        "theshold": 0.01
+      }
+    }
+  },
+  "projectId": "keam7u"
+}
