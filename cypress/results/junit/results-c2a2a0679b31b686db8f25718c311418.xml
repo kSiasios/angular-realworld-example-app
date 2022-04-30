@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="26.2220" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-04-29T10:34:17" tests="0" file="cypress/integration/firstTest.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test with backend" timestamp="2022-04-29T10:34:17" tests="5" time="26.1850" failures="0">
+    <testcase name="Test with backend Verify correct request and response" time="7.4180" classname="Verify correct request and response">
+    </testcase>
+    <testcase name="Test with backend Intercept and modify request and response" time="7.3600" classname="Intercept and modify request and response">
+    </testcase>
+    <testcase name="Test with backend Intercept get request with custom response" time="2.0310" classname="Intercept get request with custom response">
+    </testcase>
+    <testcase name="Test with backend Verify global feed likes count" time="5.8100" classname="Verify global feed likes count">
+    </testcase>
+    <testcase name="Test with backend Test article deletion" time="3.5000" classname="Test article deletion">
+    </testcase>
+  </testsuite>
+</testsuites>

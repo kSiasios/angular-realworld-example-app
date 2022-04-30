@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="78.0530" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-29T12:27:33" tests="0" file="cypress/integration/firstTest.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test with backend" timestamp="2022-04-29T12:27:33" tests="4" time="77.9270" failures="1">
+    <testcase name="Test with backend Verify correct request and response" time="18.6720" classname="Verify correct request and response">
+    </testcase>
+    <testcase name="Test with backend Intercept and modify request and response" time="14.7600" classname="Intercept and modify request and response">
+      <failure message="res.body.article is undefined" type="TypeError"><![CDATA[TypeError: res.body.article is undefined
+./cypress/integration/firstTest.spec.js/</</</<@http://localhost:4200/__cypress/tests?p=cypress/integration/firstTest.spec.js:164:9
+../driver/src/cy/net-stubbing/events/response.ts/onResponse/<@http://localhost:4200/__cypress/runner/cypress_runner.js:172390:12
+tryCatcher@http://localhost:4200/__cypress/runner/cypress_runner.js:13022:23
+../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@http://localhost:4200/__cypress/runner/cypress_runner.js:10296:29
+onResponse@http://localhost:4200/__cypress/runner/cypress_runner.js:172389:58
+../driver/src/cy/net-stubbing/events/index.ts/registerEvents/</<@http://localhost:4200/__cypress/runner/cypress_runner.js:172161:28
+tryCatcher@http://localhost:4200/__cypress/runner/cypress_runner.js:13022:23
+../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@http://localhost:4200/__cypress/runner/cypress_runner.js:10296:29
+../driver/src/cy/net-stubbing/events/index.ts/registerEvents/<@http://localhost:4200/__cypress/runner/cypress_runner.js:172115:53
+../driver/node_modules/eventemitter2/lib/eventemitter2.js/</EventEmitter.prototype.emit@http://localhost:4200/__cypress/runner/cypress_runner.js:111143:19
+../driver/src/cypress/events.ts/extend/events.proxyTo/parent[fn]@http://localhost:4200/__cypress/runner/cypress_runner.js:181743:31
+../runner-shared/src/event-manager.js/addGlobalListeners/</<@http://localhost:4200/__cypress/runner/cypress_runner.js:199453:17
+../../node_modules/component-emitter/index.js/Emitter.prototype.emit@http://localhost:4200/__cypress/runner/cypress_runner.js:18455:20
+emit@http://localhost:4200/__cypress/runner/cypress_runner.js:207471:15
+emitEvent@http://localhost:4200/__cypress/runner/cypress_runner.js:207220:20
+onevent@http://localhost:4200/__cypress/runner/cypress_runner.js:207207:18
+onpacket@http://localhost:4200/__cypress/runner/cypress_runner.js:207171:22
+../../node_modules/component-emitter/index.js/Emitter.prototype.emit@http://localhost:4200/__cypress/runner/cypress_runner.js:18455:20
+emitReserved@http://localhost:4200/__cypress/runner/cypress_runner.js:207484:15
+ondecoded@http://localhost:4200/__cypress/runner/cypress_runner.js:206763:14
+../../node_modules/component-emitter/index.js/Emitter.prototype.emit@http://localhost:4200/__cypress/runner/cypress_runner.js:18455:20
+add@http://localhost:4200/__cypress/runner/cypress_runner.js:207797:23
+ondata@http://localhost:4200/__cypress/runner/cypress_runner.js:206755:22
+../../node_modules/component-emitter/index.js/Emitter.prototype.emit@http://localhost:4200/__cypress/runner/cypress_runner.js:18455:20
+onPacket@http://localhost:4200/__cypress/runner/cypress_runner.js:204686:16
+../socket/node_modules/engine.io-client/lib/socket.js/setTransport/<@http://localhost:4200/__cypress/runner/cypress_runner.js:204495:14
+../../node_modules/component-emitter/index.js/Emitter.prototype.emit@http://localhost:4200/__cypress/runner/cypress_runner.js:18455:20
+onPacket@http://localhost:4200/__cypress/runner/cypress_runner.js:205084:10
+onData@http://localhost:4200/__cypress/runner/cypress_runner.js:205077:10
+../socket/node_modules/engine.io-client/lib/transports/websocket.js/</addEventListeners/this.ws.onmessage@http://localhost:4200/__cypress/runner/cypress_runner.js:206050:36
+]]></failure>
+    </testcase>
+    <testcase name="Test with backend Intercept get request with custom response" time="4.7950" classname="Intercept get request with custom response">
+    </testcase>
+    <testcase name="Test with backend Verify global feed likes count" time="11.1610" classname="Verify global feed likes count">
+    </testcase>
+  </testsuite>
+</testsuites>

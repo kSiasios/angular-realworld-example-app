@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="71.8200" tests="5" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-04-29T12:27:25" tests="0" file="cypress/integration/firstTest.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Test with backend" timestamp="2022-04-29T12:27:25" tests="5" time="71.7110" failures="1">
+    <testcase name="Test with backend Verify correct request and response" time="17.3430" classname="Verify correct request and response">
+    </testcase>
+    <testcase name="Test with backend Intercept and modify request and response" time="10.1240" classname="Intercept and modify request and response">
+      <failure message="Cannot read properties of undefined (reading &apos;description&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'description')
+    at eval (http://localhost:4200/__cypress/tests?p=cypress/integration/firstTest.spec.js:164:33)]]></failure>
+    </testcase>
+    <testcase name="Test with backend Intercept get request with custom response" time="3.3780" classname="Intercept get request with custom response">
+    </testcase>
+    <testcase name="Test with backend Verify global feed likes count" time="10.1440" classname="Verify global feed likes count">
+    </testcase>
+    <testcase name="Test with backend Test article deletion" time="8.4830" classname="Test article deletion">
+    </testcase>
+  </testsuite>
+</testsuites>
